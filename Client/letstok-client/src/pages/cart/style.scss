@@ -1,0 +1,113 @@
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .cart-shopping-area {
+    display: flex;
+    .products-shelf {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0.5;
+      gap: 12px;
+      max-height: 400px;
+      overflow-y: scroll;
+
+      .cart-product {
+        background: #efefef;
+        color: rgba(0, 0, 0, 0.548);
+        padding: 12px;
+        border-radius: 12px;
+        transition: 0.2s ease-in-out;
+        .product-row {
+          display: flex;
+          gap: 4px;
+  
+          .p-name {
+            font-size: 14px;
+          }
+    
+          .p-brand {
+            font-size: 12px;
+          }
+    
+          .p-price {
+            font-style: italic;
+          }
+        }
+  
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+  
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 12px;
+      flex: 0.5;
+      max-height: 400px;
+      overflow-y: scroll;
+      .cart-product {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        background: #efefef;
+        color: rgba(0, 0, 0, 0.548);
+        padding: 12px;
+        border-radius: 12px;
+        transition: 0.2s ease-in-out;
+          .cart-row {
+            display: flex;
+            gap: 4px;
+      
+            .p-name {
+              font-size: 14px;
+            }
+      
+            .p-brand {
+              font-size: 12px;
+            }
+      
+            .p-price {
+              font-style: italic;
+            }
+          }
+      }
+    }
+  }
+
+
+  .cart-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    .checkout-btn {
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+      justify-content: center;
+      background: #efefef;
+      padding: 12px;
+      max-width: 150px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .sum-row {
+      display: flex;
+      gap: 6px;
+      .cart-sum-label {
+        font-size: 14px;
+        font-style: italic;
+      }
+    }
+  }
+}

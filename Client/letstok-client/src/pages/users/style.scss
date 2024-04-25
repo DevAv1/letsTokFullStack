@@ -1,0 +1,114 @@
+.users-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 22px 0;
+  
+  .user-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    position: relative; 
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #b1b1b1;
+    }
+
+    .create-user-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      border: 1px solid black;
+      padding:20px 100px;
+      border-radius: 12px;
+      
+      .form-title {
+        font-size: 18px;
+        font-weight: bolder; 
+      }
+  
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+  
+        .error-validation {
+          position: absolute;
+          bottom: -14px;
+          left: 0;
+          font-size: 10px;
+          color: red;
+        }
+    
+        input {
+          font-size: 12px;
+  
+        }
+        label {
+          font-size: 12px;
+        }
+  
+      }
+      .submit-btn {
+        margin: 12px 0;
+      }
+    }
+  }
+  .users-list-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    height: 100%;
+    max-width: 1216px;
+    padding: 22px 0;
+    
+    .user-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px;
+      width: 200px;
+      height: 250px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 12px;
+      transition: 0.2s ease-in-out;
+      .action-icon {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .user-details {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 12px;
+        .user-details-row {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .detail-label {
+            padding-right: 12px;
+            color: #3b3b3b;
+            text-wrap: nowrap;
+          }
+          .detail-value {
+          }
+        }
+      }
+
+      .user-actions {
+        display: flex;
+        gap: 12px;
+      }
+    }
+  }
+}

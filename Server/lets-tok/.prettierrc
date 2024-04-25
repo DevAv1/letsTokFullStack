@@ -1,0 +1,9 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "ignorePatterns": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.html"],
+  "endOfLine": "auto",
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 80
+}
