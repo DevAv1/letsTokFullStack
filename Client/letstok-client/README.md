@@ -12,19 +12,15 @@ This project is a React Vite app with a NestJS backend, using PostgreSQL as the 
 
 ### Installation
 
+- CLIENT SIDE - npm start for installing the node modules and npm run dev for starting the app (Vite App)
+- BE - for starting write: nest start 
+
 ### Configuration
 
 Backend
 The backend server is powered by NestJS and connects to a PostgreSQL database.
 
-Port: 3000
-Frontend
-The frontend is built using React with Vite.
-
-Port: 5173
-Database
-The PostgreSQL database is running on the default port.
-
-Port: 5432
-
+DB PORT: 5432
+SERVER PORT: 3000
+FRONT PORT: 5173
 
