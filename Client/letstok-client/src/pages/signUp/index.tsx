@@ -41,12 +41,18 @@ export const SignUp = () => {
         </div>
         <div className="input">
           <label>Password</label>
-          <input {...register('password', { required: true })} />
+          <input
+            type="password"
+            {...register('password', { required: true })}
+          />
           {errors.password && <span>This field is required</span>}
         </div>
         <div className="input">
           <label>Confirm password</label>
-          <input {...register('confirmPassword', { required: true })} />
+          <input
+            type="password"
+            {...register('confirmPassword', { required: true })}
+          />
           {errors.confirmPassword && <span>This field is required</span>}
           {!passwordsMatchValidation && <span>Passwords has to match</span>}
         </div>

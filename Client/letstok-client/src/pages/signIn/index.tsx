@@ -32,17 +32,20 @@ export const SignIn = () => {
         {/* register your input into the hook by invoking the "register" function */}
         <div className="input">
           <label>Username</label>
-          <input {...register("username")} />
+          <input {...register('username')} />
           {errors.username && <span>This field is required</span>}
         </div>
         <div className="input">
           <label>Password</label>
-          <input {...register("password", { required: true })} />
+          <input
+            type="password"
+            {...register('password', { required: true })}
+          />
           {errors.password && <span>This field is required</span>}
         </div>
-        <input className="submit-btn" type="submit" /> 
+        <input className="submit-btn" type="submit" />
       </form>
       <span className="auth-message">{authMessage}</span>
     </div>
-  )
+  );
 }
