@@ -1,9 +1,9 @@
 import { useState } from "react";
 import './style.scss';
 import CreateProductForm from "./CreateProductForm"
-import { Product } from "./interfaces";
-import ProductList from './ProductsList';
-import { useProductsListManager } from "./hooks/useProductsListManager";
+import { Product } from './interfaces';
+import { useProductsListManager } from './hooks/useProductsListManager';
+import { ProductList } from './ProductsList';
 
 export const Products = () => {
     const [ selectedProduct, setSelectedProduct ] = useState<Product>();

@@ -31,28 +31,28 @@ export const SignUp = () => {
   
   return (
     <div className="sign-up">
-      <h3>SignIn</h3>
+      <h3>SignUp</h3>
       <form onSubmit={handleSubmit(onSubmit as any)}>
         {/* register your input into the hook by invoking the "register" function */}
         <div className="input">
           <label>Username</label>
-          <input {...register("username")} />
+          <input {...register('username')} />
           {errors.username && <span>This field is required</span>}
         </div>
         <div className="input">
           <label>Password</label>
-          <input {...register("password", { required: true })} />
+          <input {...register('password', { required: true })} />
           {errors.password && <span>This field is required</span>}
         </div>
         <div className="input">
           <label>Confirm password</label>
-          <input {...register("confirmPassword", { required: true })} />
+          <input {...register('confirmPassword', { required: true })} />
           {errors.confirmPassword && <span>This field is required</span>}
           {!passwordsMatchValidation && <span>Passwords has to match</span>}
         </div>
-        <input className="submit-btn" type="submit" /> 
-    </form>
-    <span className="sign-up-message">{signUpMessage}</span>
+        <input className="submit-btn" type="submit" />
+      </form>
+      <span className="sign-up-message">{signUpMessage}</span>
     </div>
-  )
+  );
 }

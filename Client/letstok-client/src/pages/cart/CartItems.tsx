@@ -6,7 +6,7 @@ interface Props {
   selectedProducts: Product[]
 }
 
-export const CartItems: React.FC<Props> = ({ selectedProducts }) => {
+export const CartItems: React.FC<Props> = observer(({ selectedProducts }) => {
   return (
     <div className="cart-items">
       <h3>Cart:</h3>
@@ -26,6 +26,4 @@ export const CartItems: React.FC<Props> = ({ selectedProducts }) => {
       }
     </div>
   )
-}
-
-export default observer(CartItems)
+})

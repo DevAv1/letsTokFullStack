@@ -17,7 +17,7 @@ interface Props {
   onFormSubmitCallback?: () => void;
 }
 
-export const CreateUserForm: React.FC<Props> = ({ selectedUser, onFormSubmitCallback, deleteUserId }) => {
+export const CreateUserForm: React.FC<Props> = observer(({ selectedUser, onFormSubmitCallback, deleteUserId }) => {
   const {
     register,
     handleSubmit,
@@ -63,6 +63,4 @@ export const CreateUserForm: React.FC<Props> = ({ selectedUser, onFormSubmitCall
       </form>
     </div>
   )
-}
-
-export default observer(CreateUserForm);
+})

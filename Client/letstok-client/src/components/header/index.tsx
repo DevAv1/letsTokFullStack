@@ -4,7 +4,7 @@ import store from '../../mobx/store';
 import { observer } from "mobx-react";
 import { useEffect } from "react";
 
-const Header = () => {
+export const Header = observer(() => {
   const isAuth = store.isAuthenticated;
   const navigate = useNavigate();
 
@@ -46,6 +46,4 @@ const Header = () => {
       </div>
     </div>
   )
-}
-
-export default observer(Header);
+})

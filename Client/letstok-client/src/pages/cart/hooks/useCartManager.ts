@@ -51,7 +51,6 @@ export const useCartManager = () => {
 
   useEffect(() => {
     if (!sideEffectExecute.current) {
-      console.log('!!! happened !!!!');
       onInitOrder();
       onProductsLoad();
       sideEffectExecute.current = true;

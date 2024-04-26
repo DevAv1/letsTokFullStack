@@ -116,13 +116,18 @@
   .products-list-view {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 12px;
     height: 100%;
     padding: 22px;
     overflow-y: scroll;
     min-width: 100%;
-    
+    .product-filter-actions {
+      display: flex;
+      max-width: 400px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
     .product-box {
       display: flex;
       flex-direction: column;

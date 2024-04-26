@@ -5,7 +5,7 @@ import { Product } from "../products/interfaces";
 interface Props {
   onProductSelect: (product: Product) => void;
 }
-const ProductsList: React.FC<Props> = ({ onProductSelect }) => {
+export const ProductsList: React.FC<Props> = observer(({ onProductSelect }) => {
   const { products } = store;
   return (
     <div className="products-shelf">
@@ -25,6 +25,4 @@ const ProductsList: React.FC<Props> = ({ onProductSelect }) => {
     }
   </div>
   )
-}
-
-export default observer(ProductsList);
+})
